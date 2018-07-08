@@ -1,0 +1,317 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat';
+  position: absolute;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/font/Montserrat-Medium.otf");
+}
+/*
+input[placeholder]
+{   font-size: 1px;
+}
+*/
+.section {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+
+  @media (max-width: 740px) {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+}
+
+.left {
+  left: 0;
+  background-color: #3c2c60;
+
+  @media (max-width: 740px) {
+    width:100%;
+    left:0;
+  }
+}
+
+.right {
+  right: 0;
+  background-color: #fff;
+
+  @media (max-width: 740px) {
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+
+.centered {
+  position: absolute;
+  width:100%;
+  left: 20%;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    height:50%;
+    left: 0;
+  }
+}
+
+/*Region left side*/
+.textLeftOne {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 300px;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+  }
+}
+
+.textLeftTwo {
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  position: absolute;
+  top: 340px;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    font-size: 25px;
+    top: 50px;
+    left: 5%;
+  }
+}
+
+.textLeftThree {
+  font-size: 20px;
+  color: rgb(195, 186, 215);
+  position: absolute;
+  top: 500px;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+  }
+}
+
+.textLeftFour {
+  font-size: 48px;
+  color: rgb(242, 75, 113);
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 580px;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    font-size: 24px;
+    top: 230px;
+    left: 10%;
+  }
+}
+
+.textLeftFive {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 670px;
+
+  @media (max-width: 740px) {
+    position: absolute;
+    top: 260px;
+    left: 5%;
+  }
+}
+
+.textLeftLine {
+  text-decoration: rgb(242, 75, 113) line-through;
+}
+/*End region*/
+
+/*Region Right side*/
+.textRightOne {
+  font-size: 20px;
+  color: rgba(60, 44, 96, 0.702);
+  position: absolute;
+  top: 220px;
+
+  @media (max-width: 740px) {
+    position: fixed;
+    top: 330px;
+    left: 60%;
+    color: white;
+  }
+}
+
+.clock {
+  font-size: 30px;
+  color: rgb(9, 9, 9);
+  font-weight: bold;
+}
+
+.clockSecond {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.textRightTwo {
+  font-size: 36px;
+  color: rgb(9, 9, 9);
+  font-weight: bold;
+  position: absolute;
+  top: 290px;
+
+  @media (max-width: 740px) {
+    position: fixed;
+    font-size: 25px;
+    top: 320px;
+    color: white;
+    width: 50%;
+    left: 5%;
+  }
+}
+
+.formInputName {
+  font-size: 16px;
+  color: rgba(60, 44, 96, 0.6);
+  position: absolute;
+  top: 450px;
+  padding: 15px 240px 15px 35px;
+
+  @media (max-width: 740px) {
+    position: fixed;
+    top: 520px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+  .formInputName:focus {
+    border: 2px solid #3c2c60;
+  }
+
+.formInputPhone {
+  font-size: 16px;
+  color: rgba(60, 44, 96, 0.6);
+  position: absolute;
+  top: 540px;
+  padding: 15px 240px 15px 35px;
+
+  @media (max-width: 740px) {
+    position: fixed;
+    top: 590px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+  .formInputPhone:focus {
+    border: 2px solid #3c2c60;
+  }
+
+.formInputEmail {
+  font-size: 16px;
+  position: absolute;
+  top: 630px;
+  padding: 15px 240px 15px 35px;
+
+  @media (max-width: 740px) {
+    position: fixed;
+    top: 660px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+  .formInputEmail:focus {
+    border: 2px solid #3c2c60;
+  }
+
+.formButton {
+  position: absolute;
+  top: 720px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 20px 80px;
+  color: white;
+  background: rgb(242, 75, 112);
+
+  @media (max-width: 740px) {
+    position: fixed;
+    top: 720px;
+    width: 80%;
+    left: 10%;
+  }
+}
+
+  .formButton:hover {
+    background: rgb(225, 67, 103);
+    border: none;
+  }
+
+  .formButton:focus {
+    background: rgb(242, 75, 112);
+    box-shadow: 0px 9px 20px 5px #dddde2;
+    border: none;
+    outline: none;
+  }
+/*End Region*/
+
+/*Back page*/
+.sectionBackPage {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+}
+
+.textBackPage {
+  font-size: 45px;
+  color: #3c2c60;
+  font-weight: bold;
+  position: fixed;
+  left: 20%;
+  top: 10%;
+}
+
+.buttonBackPage {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 20px 80px;
+  color: white;
+  background: rgb(242, 75, 112);
+}
+
+  .buttonBackPage:hover {
+    background: rgb(225, 67, 103);
+    border: none;
+  }
+
+  .buttonBackPage:focus {
+    background: rgb(242, 75, 112);
+    box-shadow: 0px 9px 20px 5px #dddde2;
+    border: none;
+  }
+/*End Region*/
